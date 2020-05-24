@@ -1,0 +1,163 @@
+/* Big tablet to 1200 px */
+@media only screen and (max-width: 1200px) {
+  .hero-text-box {
+    width: 100%;
+    padding: 0 2%;
+  }
+  .course-name {
+      height: 6rem;
+  }
+    .tags ul {
+        height: 105px;   /*34*3*/
+    }
+    .card div:not(:first-child) {
+    padding: 5px 8px;
+    }
+    .card-img {
+    height: 150px;
+    }
+  .row {
+    padding: 0 2%;
+  }
+}
+
+/* Small tablet to big tablet */
+@media only screen and (max-width: 1023px) {
+  body {
+    font-size: 18px;
+  }
+  section {
+    padding: 60px 0;
+  }
+  .long-copy {
+    width: 80%;
+    margin-left: 10%;
+    font-size: 120%;
+    text-align: center;
+  }
+  .main-card-box {
+  position: static;
+  width: 100%;
+      padding: 0 20%;
+      padding-bottom: 10%;
+    }
+.main-card-box .card-img {
+    height: 300px;
+}
+.course-page-title {
+    margin: 100px 0;
+    padding: 100px 50px;
+    text-align: center;
+    }
+    .expand-shrink {
+        width: 80%;
+/*        margin: 0;*/
+    }
+
+input[type="radio"]:first-of-type{
+  margin-left: 35%;
+}
+
+.rat-submit{
+  margin-top: 1%;
+  margin-left: 40%;
+}
+}
+
+/* Small phones to small tablets */
+@media only screen and (max-width: 767px) {
+  body {
+    font-size: 16px;
+  }
+  section {
+    padding: 30px 0;
+  }
+  .long-copy {
+    width: 100%;
+    margin-left: 0%;
+    font-size: 90%;
+}
+  .hero-text-box,
+  .row {
+    padding: 0 4%;
+  }
+  h1 {
+    font-size: 180%;
+  }
+  .sem-head {
+    font-size: 150%;
+  }
+  .icon {
+    font-size: 300%;
+  }
+
+  input[type="radio"]:first-of-type{
+    margin-left: 26%;
+  }
+  .rat-submit{
+    margin-left: 35%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .icon {
+    font-size: 250%;
+    margin-left: 5px;
+  }
+  .course-name {
+      height: auto;
+  }
+.tags ul {
+        height: auto;
+    }
+    .card div:not(:first-child) {
+    padding: 2px 8px;
+    }
+    .card-img {
+    height: 100px;
+    }
+  section {
+    padding: 25px 0;
+  }
+
+  .home{
+    width: 150px;
+  }
+  .center{
+    padding-left: 2vw;
+  }
+    .main-card-box {
+      padding: 0 10%;
+        padding-bottom: 10%;
+    }
+.main-card-box .card-img {
+    height: 150px;
+}
+.course-page-title {
+    margin-bottom: 50px;
+    padding: 50px 25px;
+    }
+    .expand-shrink {
+        width: 80%;
+/*        margin: 0;*/
+    }
+}
+
+
+/*
+
+  .main-card-box {
+  position: static;
+  width: 100%;
+      padding: 0 20%;
+      padding-bottom: 10%;
+    }
+.course-page-title {
+    margin: 100px 0;
+    padding: 100px 50px;
+    text-align: center;
+    }
+    .expand-shrink {
+        width: 80%;
+        margin: 0;
+    }*/
