@@ -5,7 +5,19 @@ function addRating() {
     for (let rat of ratHolders) {
         var ref = database.ref().child('ratings').child('r' + rat.id);
         ref.on('value', function (snapshot) {
-            rat.innerHTML = snapshot.val();
+//            rat.innerHTML = snapshot.val();
+            let rating = Math.round(snapshot.val() * 2) / 2;
+            for(let i=1; i<=10; i++)
+            {
+                let dir = 'R';
+                if( i % 2 )
+                    dir = 'L';
+                if( rating >= 0.5 * i )
+                    rat.innerHTML += '<img src="../resources/img/fullstarblue' + dir + '.png" class="star-image">';
+                else
+                    rat.innerHTML += '<img src="../resources/img/emptystar' + dir + '.png" class="star-image">';
+            }
+            rat.innerHTML += ' (' + snapshot.val() + ')';
         })
     }
 }
@@ -37,6 +49,7 @@ function getRating() {
                     ref_rating.set(JSON.stringify(nr));
                     ref_number.set(JSON.stringify(no));
                     a = true
+                    window.location.reload();
                     break;
 
                 }
